@@ -3,13 +3,13 @@ let campos = [
     document.querySelector('#quantidade'),
     document.querySelector('#valor'),
 ];
-console.log(campos)
+campos[0].focus();
 
 
-// let tbody = document.querySelector('[data-js="tbody"]');
+let tbody = document.querySelector('[data-js="tbody"]');
+
 // let btn_apagar = document.querySelector('[data-js="btn-apagar"]');
 // let btn_importar = document.querySelector('[data-js="btn-importar"]');
-
 
 // let btn_incluir = document.querySelector('[data-js="btn-incluir"]');
 let $formulario = document.querySelector('.form')
@@ -29,4 +29,5 @@ $formulario.addEventListener('submit', event => {
     row.appendChild(volume);
 
     tbody.appendChild(row);
+    $formulario.reset();
 })
